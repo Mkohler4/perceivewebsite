@@ -3,6 +3,9 @@ import "../styles.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Perceive from "../images/Perceive.png";
 import Button from '@material-ui/core/Button';
+import About from "../images/About.png";
+import Estimate from "../images/Estimate.png";
+import Portfolio from "../images/Portfolio.png";
 
 class LandingPage extends Component {
     constructor(props) {
@@ -49,6 +52,19 @@ class LandingPage extends Component {
                     <div className="col-lg-7 col-md-12" style={{ flex: 1, display: "flex", justifyContent: "center", alignItems: this.state.width < 900 ? "center" : "baseline", marginRight: window.innerWidth < 900 ? "0" : "5%" }}>
                         <img src={Perceive} hidden={this.state.width < 900 ? true : false} className="perceiveLogo" style={{ height: "70%", position: "absolute", marginTop: "35px", left: "32%" }} />
                         <div className="iphone iphoneTransform">
+                            <div style={{ width: "100%", flex: 1 }}></div>
+                            <div style={{ width: "100%", flex: 12, display: "flex", flexDirection: "column" }}>
+                                <div style={{ width: "100%", flex: "1", display: "flex", flexDirection: "row" }}>
+                                    <div className="appAboutImage" hidden={this.state.width < 900 ? false : true} style={{ height: "71px", maxWidth: "71px", borderRadius: "15px", flex: 1, margin: "auto" }} />
+                                    <div className="appPortfolioImage" hidden={this.state.width < 900 ? false : true} style={{ height: "71px", maxWidth: "71px", border: "2px solid black", borderRadius: "15px", flex: 1, margin: "auto" }} />
+                                    <div className="appEstimateImage" hidden={this.state.width < 900 ? false : true} style={{ height: "71px", maxWidth: "71px", borderRadius: "15px", flex: 1, margin: "auto" }} />
+                                </div>
+                                <div style={{ width: "100%", flex: "1" }}></div>
+                                <div style={{ width: "100%", flex: "1" }}></div>
+                                <div style={{ width: "100%", flex: "1" }}></div>
+                                <div style={{ width: "100%", flex: "1" }}></div>
+                                <div style={{ width: "100%", flex: "1" }}></div>
+                            </div>
                             <div className="iphoneLine"></div>
                         </div>
                     </div>
