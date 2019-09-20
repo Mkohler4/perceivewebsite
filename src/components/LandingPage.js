@@ -51,8 +51,16 @@ class LandingPage extends Component {
                         <img src={Perceive} hidden={this.state.width < 900 ? true : false} className="perceiveLogo" style={{ height: "70%", position: "absolute", marginTop: "35px", left: "32%" }} />
                         <div className="iphone iphoneTransform">
                             <div hidden={this.state.width < 900 ? false : true} style={{ width: "100%", flex: 1, maxHeight: "50px", display: "flex", flexDirection: "row" }}>
-                                <img src={cellularIcon} style={{ transform: "scale(0.05)", justifySelf: "center", alignSelf: "center", flex: 1 }}></img>
-                                <h1 style={{ fontSize: "10px", flex: 1, placeSelf: "center" }}>Percieve</h1>
+                                <div style={{ flex: 1, justifySelf: "center", alignSelf: "center", display: "flex", justifyContent: "center" }}>
+                                    {/* <img src={cellularIcon} style={{ transform: "scale(0.05)", flex: 1 }}></img> */}
+                                    <h1 style={{ fontSize: "10px" }}>Percieve</h1>
+                                </div>
+                                <div style={{ flex: 1, justifySelf: "center", alignSelf: "center", display: "flex", justifyContent: "center" }}>
+                                    <h3 style={{ fontSize: "7px" }}>9:20 pm</h3>
+                                </div>
+                                <div style={{ flex: 1, justifySelf: "center", alignSelf: "center", display: "flex", justifyContent: "center" }}>
+                                    <h3 style={{ fontSize: "7px" }}>9%</h3>
+                                </div>
                             </div>
                             <div style={{ width: "100%", flex: 12, display: "flex", flexDirection: "column" }}>
                                 <div style={{ width: "100%", flex: "1", display: "flex", flexDirection: "row" }}>
